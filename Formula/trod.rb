@@ -7,6 +7,21 @@ class Trod < Formula
 
   depends_on "rust" => :build
 
+  def caveats
+    <<~EOS
+      Add the following to your shell config to enable trod:
+
+      For zsh (~/.zshrc):
+        eval "$(trod init zsh)"
+
+      For bash (~/.bashrc):
+        eval "$(trod init bash)"
+
+      This gives you automatic directory tracking, the `td` alias,
+      and Ctrl-G to launch the interactive picker.
+    EOS
+  end
+
   def install
     system "cargo", "install", *std_cargo_args
   end
