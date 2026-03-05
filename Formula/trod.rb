@@ -1,8 +1,8 @@
 class Trod < Formula
   desc "Persistent directory history with interactive TUI picker"
   homepage "https://github.com/yestheboxer/trod"
-  url "https://github.com/yestheboxer/trod/archive/refs/tags/v0.3.3.tar.gz"
-  sha256 "cc658ef92cd57ab6ec4f38661335268de2fbdd9221487365a1e84f536557f58c"
+  url "https://github.com/yestheboxer/trod/archive/refs/tags/v0.3.4.tar.gz"
+  sha256 "986b82f7a912aac5f70b9effccf356552c84c3c627f12af7f6a63d67351a1912"
   license "MIT"
 
   depends_on "rust" => :build
